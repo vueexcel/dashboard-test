@@ -1,0 +1,242 @@
+[
+    {
+        "id": "random-1",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Sent on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-2",
+        "campaigndetails": {
+            "title": "Untitled Campaign",
+            "status": "Drafted on 15 Apr 2023",
+            "sequences": 5,
+            "percentage": 0
+        },
+        "report": {
+            "sent": {
+                "data": "0"
+            },
+            "clicked": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "opened": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "replied": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-3",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Sent on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-4",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Stopped on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-5",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Sent on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-6",
+        "campaigndetails": {
+            "title": "Untitled Campaign",
+            "status": "Drafted on 15 Apr 2023",
+            "sequences": 5,
+            "percentage": 0
+        },
+        "report": {
+            "sent": {
+                "data": "0"
+            },
+            "clicked": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "opened": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "replied": {
+                "data": "0",
+                "percentage": "0.0"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-7",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Paused on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    },
+    {
+        "id": "random-8",
+        "campaigndetails": {
+            "title": "SW Zero Personalisation 1",
+            "status": "Sent on 15 Apr 2023",
+            "sequences": 3,
+            "percentage": 30
+        },
+        "report": {
+            "sent": {
+                "data": "520"
+            },
+            "clicked": {
+                "data": "39",
+                "percentage": "19.6"
+            },
+            "opened": {
+                "data": "202",
+                "percentage": "39.8"
+            },
+            "replied": {
+                "data": "4",
+                "percentage": "12.4"
+            },
+            "positiveReply": {
+                "data": "0",
+                "percentage": "0.0"
+            }
+        }
+    }
+]
