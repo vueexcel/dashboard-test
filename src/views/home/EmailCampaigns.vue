@@ -1,16 +1,26 @@
 <template>
     <div class="email-campaigns">
         <header class="header">
-            All campaigns (24)
+            All campaigns ({{ campaigns.length }})
         </header>
         <div>
-            <EmailCampaingnsTable />
+            <EmailCampaingnsTable :campaigns="campaigns" @select-all="selectAll" />
         </div>
     </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import EmailCampaingnsTable from '../../components/email-campaigns/CampaignsTable.vue'
+import Campaigns from '../../components/email-campaigns/campaigns.json'
+
+const campaigns = ref([...Campaigns])
+
+const selectAll = (val) => {
+  campaigns.value.forEach((campaign) => {
+    campaign.selected = val
+  })
+}
 </script>
 
 <style scoped>
@@ -22,7 +32,7 @@ import EmailCampaingnsTable from '../../components/email-campaigns/CampaignsTabl
 }
 .header::after {
     content: "";
-    background-image: url('../assets/icons/bottom-bar.svg');
+    background-image: url('../../assets/icons/bottom-bar.svg');
     height: 4px;
     width: 39px;
     position: absolute;

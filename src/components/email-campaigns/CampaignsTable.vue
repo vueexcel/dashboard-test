@@ -135,11 +135,17 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, defineProps, defineEmits } from 'vue'
 import CircularProgress from '../CircularProgress.vue'
-import Campaigns from './campaigns.json'
 
-const campaigns = ref([...Campaigns])
+defineProps({
+    campaigns: {
+        type: Array,
+        required: true,
+    }
+})
+
+const emits = defineEmits(["select-all"])
 const isAllSelected = ref(false)
 
 const isDrafted = (status) => {
@@ -162,9 +168,7 @@ const getColor = (status) => {
 }
 
 watch(isAllSelected, (val) => {
-  campaigns.value.forEach((campaign) => {
-    campaign.selected = val
-  })
+  emits("select-all", val)
 })
 </script>
 
@@ -172,6 +176,7 @@ watch(isAllSelected, (val) => {
 .checkbox {
   height: 16px;
   width: 16px;
+  margin-left: 0.75rem;
 }
 .status {
   height: 6px;
