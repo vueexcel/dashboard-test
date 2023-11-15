@@ -50,13 +50,13 @@
           </div>
         </td>
         <td>
-          <div class="report-sent" :class="{ deactivated: campaign.report.sent.data == '0' }">
+          <div class="report-sent" :class="{ deactivated: isDrafted(campaign.campaigndetails.status) }">
             <span>{{ campaign.report.sent.data }}</span>
           </div>
           <span class="report-type">Sent</span>
         </td>
         <td>
-          <div class="report-clicked" :class="{ deactivated: campaign.report.clicked.data == '0' }">
+          <div class="report-clicked" :class="{ deactivated: isDrafted(campaign.campaigndetails.status) }">
             <span>{{ campaign.report.clicked.data }}</span>
             <span>{{ campaign.report.clicked.percentage }}%</span>
           </div>
@@ -65,11 +65,11 @@
             <img
               src="../../assets/icons/error.svg"
               alt="error icon"
-              v-if="campaign.report.sent.data == '0'"
+              v-if="isDrafted(campaign.campaigndetails.status)"
           /></span>
         </td>
         <td>
-          <div class="report-opened" :class="{ deactivated: campaign.report.opened.data == '0' }">
+          <div class="report-opened" :class="{ deactivated: isDrafted(campaign.campaigndetails.status) }">
             <span>{{ campaign.report.opened.data }}</span>
             <span>{{ campaign.report.opened.percentage }}%</span>
           </div>
@@ -78,11 +78,11 @@
             <img
               src="../../assets/icons/error.svg"
               alt="error icon"
-              v-if="campaign.report.sent.data == '0'"
+              v-if="isDrafted(campaign.campaigndetails.status)"
           /></span>
         </td>
         <td>
-          <div class="report-replied" :class="{ deactivated: campaign.report.replied.data == '0' }">
+          <div class="report-replied" :class="{ deactivated: isDrafted(campaign.campaigndetails.status) }">
             <span>{{ campaign.report.replied.data }}</span>
             <span>{{ campaign.report.replied.percentage }}%</span>
           </div>
@@ -91,14 +91,14 @@
             <img
               src="../../assets/icons/error.svg"
               alt="error icon"
-              v-if="campaign.report.sent.data == '0'"
+              v-if="isDrafted(campaign.campaigndetails.status)"
             />
           </span>
         </td>
         <td>
           <div
             class="report-positive-reply"
-            :class="{ deactivated: campaign.report.positiveReply.data == '0' }"
+            :class="{ deactivated: isDrafted(campaign.campaigndetails.status) }"
           >
             <span>{{ campaign.report.positiveReply.data }}</span>
             <span>{{ campaign.report.positiveReply.percentage }}%</span>
@@ -109,7 +109,7 @@
               <img
                 src="../../assets/icons/info-solid-icon.svg"
                 alt="info icon"
-                v-if="campaign.report.opened.data == '0'"
+                v-if="isDrafted(campaign.campaigndetails.status)"
               />
               <img src="../../assets/icons/info-regular-icon.svg" alt="info icon" v-else />
               <span class="text">info</span>
@@ -141,6 +141,10 @@ import Campaigns from './campaigns.json'
 
 const campaigns = ref([...Campaigns])
 const isAllSelected = ref(false)
+
+const isDrafted = (status) => {
+    return status.includes('Drafted')
+}
 
 const getColor = (status) => {
   switch (true) {
