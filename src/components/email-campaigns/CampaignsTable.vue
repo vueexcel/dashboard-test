@@ -189,6 +189,7 @@ watch(isAllSelected, (val) => {
 }
 .email-campaings-table {
   width: 100%;
+  border-spacing: 0 1.92px;
 }
 .email-campaings-table > thead > tr > th {
   height: 50px;

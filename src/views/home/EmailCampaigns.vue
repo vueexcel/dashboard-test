@@ -25,7 +25,10 @@ const selectAll = (val) => {
 
 <style scoped>
 .header {
-    position: relative;
+    position: fixed;
+    background-color: var(--white);
+    width: 100%;
+    z-index: 99;
     padding: 1.25rem;
     font-weight: 500;
     border-bottom: 1px solid var(--slate-100);
@@ -47,5 +50,6 @@ const selectAll = (val) => {
     min-height: calc(100% - 60px);
     background-color: var(--grey-100);
     padding: 1.25rem;
+    padding-top: 5rem;
 }
 </style>
